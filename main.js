@@ -31,7 +31,7 @@ function onChange(event) {
       }
     }
 
-    imageEl.src = `/assets/${cardType}.svg`;
+    imageEl.src = `assets/${cardType}.svg`;
 
     return;
   }
