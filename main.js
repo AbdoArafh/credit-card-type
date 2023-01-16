@@ -16,17 +16,19 @@ function onChange(event) {
     let cardType = "invalid";
 
     if (checksum(value)) {
-      const test = value.slice(2);
-
-      if (test === "34" || test === "37") {
+      if (value.startsWith("34") || value.startsWith("37")) {
         cardType = "american-express";
       }
 
-      if (["51", "52", "53", "54", "55"].some((value) => value === test)) {
+      if (
+        ["22", "51", "52", "53", "54", "55"].some((test) =>
+          value.startsWith(test)
+        )
+      ) {
         cardType = "master-card";
       }
 
-      if (value[0] === "4") {
+      if (value.startsWith("4")) {
         cardType = "visa";
       }
     }
