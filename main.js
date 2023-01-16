@@ -6,7 +6,6 @@ function onChange(event) {
   if (value.search(nonDigitReg) !== -1) {
     error("please only type numbers");
     return;
-    // event.target.value = event.target.value.replace(nonDigitReg, "");
   } else {
     error("");
   }
