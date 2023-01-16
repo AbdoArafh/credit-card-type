@@ -1,7 +1,7 @@
 function onChange(event) {
   const { value } = event.target;
 
-  const nonDigitReg = /[[a-zA-Z]|\s]/g;
+  const nonDigitReg = /\D/g;
 
   if (value.search(nonDigitReg) !== -1) {
     error("please only type numbers");
