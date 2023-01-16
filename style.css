@@ -55,3 +55,18 @@ body {
     height: 1.5rem;
     color: var(--success);
 }
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #eee;
+    }
+
+    .control-group {
+        color: var(--dark-grey);
+    }
+
+    .control-group input {
+        color: var(--dark-grey);
+        border-color: var(--dark-grey)
+    }
+}
