@@ -1,0 +1,57 @@
+:root {
+    --primary: #007bff;
+    --danger: #dc3445;
+    --success: #28a745;
+    --dark-grey: #343a40;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--dark-grey);
+    font-family: sans-serif;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    color: white;
+}
+
+.control-group .label {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.control-group input {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.control-group #error {
+    align-self: start;
+    color: var(--danger);
+}
+
+.control-group .credit-input {
+    position: relative;
+}
+
+.control-group .credit-input #credit-card {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    color: var(--success);
+}
